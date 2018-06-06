@@ -1,0 +1,23 @@
+name: JackpotChest
+main: SulthanMCPE\JackpotChest\Main
+api: [3.0.0-ALPHA11, 3.0.0-ALPHA12, 3.0.0-ALPHA13]
+version: SI-2018
+author: SulthanMCPE AKA EmeraldAssasin Playz
+authors: EmeraldAssasin Playz , PiggyGuy , JackMD
+load: POSTWORLD
+description: Epic Crates Plugin For CubeX.
+website: https://youtube.com/emeraldassasinplayz
+
+permissions:
+ mc.crates.use:
+  default: true
+  description: "Allows using the crates."
+ mc.command.key:
+  default: op
+  description: "Allows use of /key command"
+ mc.crates.create:
+  default: op
+  description: "Allows using the crates."
+ mc.crates.destroy:
+  default: op
+  description: "Allows using the crates."

@@ -1,0 +1,53 @@
+---
+crates:
+# HUGE THANKS TO @DaPigGuy and his PiggyCrates plugin for making this possible.
+#
+# Disclaimer: Some part of this code has been taken from @DaPigGuy's plugin,
+# I have asked his permission to use his code as a reference before hand as to avoid
+# unnecessary complains and/or contradictions.
+#
+# To reward the player with a command make sure that the meta of the reward is same as
+# commandMeta set in config.yml or else the command won't work.
+#
+# Example on how to set the config.
+# Note: For adding spaces use tabs.
+#-------------------------------------------------------------------------------------------------------------------------------
+# example:               | Set the name of the crate.
+#  drops:                | List the items that can be received from the crate.
+#   - name: "G-Helmet"   | Custom name for the item. Use "§" for adding colors.
+#     id: 1              | ID of the reward.
+#     meta: 0            | Meta or Damage value of the Item.
+#     amount: 1          | The amount of Item that player receives.
+#     enchantments:      | Set enchants for items here. Both VanillaEnchantments and PiggyCustomEnchants are supported.
+#       protection:      | Name of enchant you wish to apply.
+#         level: 3       | The level for enchant.
+#       unbreaking:      | You can set multiple enchants as long as they are registered.
+#         level: 2       | NOTE: If you donot want enchants simply remove the enchantments heading.
+#     lore: "USE ME"     | Add a custom lore to the reward. Use "\n" for next line.
+#     command: "say hi"  | Add a command that will be executed when player wins a reward. Use "%PLAYER%" to insert player name.
+#  block: "911:0"        | Set the block ID you want the crate to represent. Placing a chest on it will activate the crate.
+# ------------------------------------------------------------------------------------------------------------------------------
+  jackpot:
+    drops:
+      - name: "§l§dMighty Obsidian"
+        id: 49
+        meta: 0
+        amount: 1
+        lore: "§6This is a mighty peice\n of Obsidian Which\n Takes 3x more power\n to Destroy"
+        command: "tell %PLAYER% §bThis Is A §dRARE §bItem"
+      - name: "§l§4Apple §r§7Of §6Eden"
+        id: 466
+        meta: 0
+        amount: 1
+        enchantments:
+        knockback:
+        level: 10
+        unbreaking: 100
+        lore: "§7This §cApple §7Is From The Beggining In The §aGarden §7of §eEden\n§7And it grants its §bPossesser §dWICKED §7Powers"
+        command: "effect %PLAYER% strength 2"
+      - name: "Bedrock"
+        id: 7
+        meta: 0
+        amount: 5
+    block: "17:0"
+...
