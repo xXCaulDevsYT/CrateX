@@ -2,7 +2,6 @@ name: JackpotChest
 main: SulthanMCPE\JackpotChest\Main
 api: [3.0.0-ALPHA11, 3.0.0-ALPHA12]
 version: SI-2018
-author: ["SulthanMCPE AKA EmeraldAssasin Playz"]
 authors: ["EmeraldAssasin Playz , PiggyGuy , JackMD"]
 load: POSTWORLD
 description: Epic Crates Plugin For CubeX.
